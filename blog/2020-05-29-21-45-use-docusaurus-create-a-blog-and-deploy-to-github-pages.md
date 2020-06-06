@@ -124,7 +124,7 @@ vacantthinker.github.io
     projectName: 'vacantthinker.github.io', 
 ```
 
-vacantthinker.repo
+vacantthinker.blog.docusaurus2
 ```
   organizationName: 'vacantthinker',
   url: 'https://vacantthinker.github.io',
