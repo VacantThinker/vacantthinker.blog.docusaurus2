@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{104:function(a){a.exports=JSON.parse('{"permalink":"/vacantthinker.blog.docusaurus2/","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"previousPage":null,"nextPage":null}')}}]);
