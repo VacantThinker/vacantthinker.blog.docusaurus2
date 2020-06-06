@@ -150,7 +150,7 @@ vacantthinker.blog.docusaurus2
    
      - git 推送
    
-   - git add . && git commit -m "xxxx" && git push
+   - ```git add . && git commit -m "xxxx" && git push```
 
  
  - 2执行命令
