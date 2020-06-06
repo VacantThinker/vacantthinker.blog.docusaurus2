@@ -162,6 +162,8 @@ vacantthinker.blog.docusaurus2
  - 3执行命令
    
    - ```cmd /C "set "GIT_USER=vacantthinker" && yarn deploy"```
+   
+     - GIT_USER, 指你的github用户名
 
 示例:
 ```
