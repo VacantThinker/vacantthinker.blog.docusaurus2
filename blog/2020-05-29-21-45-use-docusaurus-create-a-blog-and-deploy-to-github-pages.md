@@ -7,7 +7,6 @@ tags: [docusaurus, deploy, github-pages, windows]
 ---
 
 
-
 ### 1前置需求
 
  - [node.js](https://nodejs.org/zh-cn/) (版本 >= 10.15.1)
@@ -116,32 +115,46 @@ module.exports = {
   // ...
 };
 ```
+
 vacantthinker.github.io
 ```
+    organizationName: 'vacantthinker', 
     url: 'https://vacantthinker.github.io',
     baseUrl: '/',
     projectName: 'vacantthinker.github.io', 
-    organizationName: 'vacantthinker', 
 ```
+
 vacantthinker.repo
 ```
+  organizationName: 'vacantthinker',
   url: 'https://vacantthinker.github.io',
   baseUrl: '/vacantthinker.repo/',
   projectName: 'vacantthinker.repo',
-  organizationName: 'vacantthinker',
 ```
 
 ### 6部署至github pages
 
-```
-cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
-```
+ - 1保存代码至github
+   
+   - git add .
+   
+   - git commit "xxxx"
+   
+   - git push
 
 示例:
 ```
 cmd /C "set "GIT_USER=vacantthinker" && yarn deploy"
+```
 
-    "windows-deploy": "cmd /C \"set \"GIT_USER=vacantthinker\" && yarn deploy\"",
+package.json
+```
+{
+  //...
+  "scripts": {
+    //...
+    "windows-deploy": "cmd /C \"set \"GIT_USER=vacantthinker\" && yarn deploy\""
+  },
 
 ```
 
@@ -150,12 +163,10 @@ cmd /C "set "GIT_USER=vacantthinker" && yarn deploy"
  - 后缀是github.io
    
    - 运行上述部署命令, 默认部署到master分支. master分支存储构建之后的纯粹静态网页. 项目代码可使用git提交至另外一个分支, 例如repo
-   - 示例: [https://github.com/VacantThinker/vacantthinker.github.io](https://github.com/VacantThinker/vacantthinker.github.io)
   
  - 后缀非github.io
    
    - 运行上述部署命令, 默认部署到gh-pages分支. master分支存储项目代码, gh-pages分支存储构建之后的存粹静态网页.
-   - 示例: [https://github.com/VacantThinker/vacantthinker.repo](https://github.com/VacantThinker/vacantthinker.repo)
 
 ### 参考引用
 
