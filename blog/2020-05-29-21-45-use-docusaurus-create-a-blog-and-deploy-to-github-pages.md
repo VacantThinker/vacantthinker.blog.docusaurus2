@@ -128,19 +128,40 @@ vacantthinker.repo
 ```
   organizationName: 'vacantthinker',
   url: 'https://vacantthinker.github.io',
-  baseUrl: '/vacantthinker.repo/',
-  projectName: 'vacantthinker.repo',
+  baseUrl: '/vacantthinker.blog.docusaurus2/',
+  projectName: 'vacantthinker.blog.docusaurus2',
 ```
 
 ### 6部署至github pages
-
+ 
+ - 0当前项目文件夹下, 打开一个命令提示符窗口 [windows]
+ 
  - 1保存代码至github
    
    - git add .
+     
+     - git 添加 所有
    
-   - git commit "xxxx"
+   - git commit -m "xxxx"
+   
+     - git 提交 信息 "xxxx"
    
    - git push
+   
+     - git 推送
+   
+   - git add . && git commit -m "xxxx" && git push
+
+ 
+ - 2执行命令
+ 
+   - ```docusaurus deploy```
+   
+     - 提示需要GIT_USER
+ 
+ - 3执行命令
+   
+   - ```cmd /C "set "GIT_USER=vacantthinker" && yarn deploy"```
 
 示例:
 ```
